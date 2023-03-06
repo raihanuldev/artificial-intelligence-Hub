@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI-Univers-Hub</title>
+    <link rel="shortcut icon" href="fav/chatgpt_assistente.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/js/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="container">
+    <header>
+        <div class="text-center">
+            <h2 class="mt-4 text-bold">AI Universe Hub</h2>
+            <button class="btn btn-danger p-3 rounded-lg mb-4" onclick="shortByDate()">Short by Date</button>
+        </div>
+    </header>
+    <main>
+        <section >
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="data_container"></div>
+        </section>
+        <section class="text-center">
+            <button class="btn btn-danger p-3 rounded-lg mt-3" onclick="showAll()" id="seeMore">See More</button>
+        </section>
+        <section>
+        <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+        </section>
+        <section>
+          <div class="d-flex justify-content-center" id="loader">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </section>
+    </main>
+    <!-- here is js files -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/7293caced8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
